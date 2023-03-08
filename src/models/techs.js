@@ -13,5 +13,4 @@ class Techs extends Model {
         this.belongsToMany(models.People, { foreignKey: "tech_id", as: "peoples", through: "people_techs" });
     }
 }
-// não rodou as migrations ainda;
 module.exports = Techs;
